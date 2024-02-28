@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="card" onclick="openCharacterModal('CHEWBACA')">
+            <h2>CHEWBACA</h2>
+            <div id="img">
+                <img src="img/1.jpeg">
+            </div>
+        </div>
+
+        <div class="card" onclick="openCharacterModal('Darth Vader')">
+            <h2>DARTH VADER</h2> 
+            <div id="img">
+                <img src="img/2.jpeg">
+            </div>
+        </div>
+
+        <div class="card" onclick="openCharacterModal('R2-D2')">
+            <h2>R2D2</h2>
+            <div id="img">
+                <img src="img/3.jpeg">
+            </div>
+        </div>
+
+        <div class="card" onclick="openCharacterModal('C3-P0')">
+            <h2>C3-P0</h2>
+            <div id="img">    
+                <img src="img/4.jpeg">
+            </div>
+        </div>
+
+        <div class="card" onclick="openCharacterModal('YODA')">
+            <h2>YODA</h2>
+            <div id="img">    
+                <img src="img/5.jpeg">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="characterModal" tabindex="-1" role="dialog" aria-labelledby="characterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="characterModalBody" style="font-size: 2rem;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-size: 1.5rem;">Close</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
